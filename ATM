@@ -1,0 +1,49 @@
+public class Password {
+    protected int pin = 123321;
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+}
+
+public class Teller extends Password{
+    Password pass = new Password();
+    Login log = new Login();
+    Saldo2 sal = new Saldo2();
+    int pil;
+}
+
+public class Login extends Password{
+    public void login();
+    super.getpin() {
+        System.out.println("=============================");
+        System.out.println("     Welcome ATM Bersama     ");
+        System.out.println("=============================");
+        System.out.println("Masukkan pin : ");
+    }
+}
+
+abstract class Saldo {
+    double saldo;
+    public abstract double minsaldo();
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+}
+
+public class Saldo2 extends Saldo{
+    double minsaldo;
+    @Override
+    public double minsaldo() {
+        return minsaldo;
+    }
+}
